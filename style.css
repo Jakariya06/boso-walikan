@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-ctn{
+    max-width: 1500px;
+    margin: auto 5rem;
+}
+
+.title{
+    margin-top: 5rem;
+   text-align: center;
+}
+
+._sumber{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+
+._hasil{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.label_title{
+    font-size: 2rem;
+    font-weight: 500;
+    justify-content: flex-start;
+}
+
+input{
+    padding: 2rem ;
+    border-radius: 10px;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  input{
+      font-size: 1rem;
+  }
+}

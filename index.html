@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boso Walikan</title>
+</head>
+<body>
+    <div class="main-ctn">
+        <h1 class="title">Boso Walik an Malang</h1>
+        <div class="_sumber">
+            <label class="label_title"> Kata </label>
+            <input type="text" id="sumber" placeholder="Masukkan Kata" onkeyup="walik()">
+        </div>
+        <div class="_hasil">
+            <label class="label_title"> Hasil </label>
+            <input type="text" disabled id="hasil">
+        </div>
+        
+    </div>
+
+    <script>
+
+        function walik(){
+            const inputanKata = document.getElementById('sumber').value;
+            const str = inputanKata;
+
+            let splitString = str.split("")
+            let rversArr = splitString.reverse()
+            let joinArr = rversArr.join("")
+
+            return document.getElementById('hasil').value = joinArr
+            
+        }
+
+    </script>
+</body>
+</html>
